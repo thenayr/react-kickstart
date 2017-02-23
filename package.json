@@ -18,6 +18,7 @@
     "test": "cross-env NODE_ENV=test jest --coverage",
     "dev": "node devServer",
     "start": "node prodServer.js",
+    "prune": "node prune.js",
     "prebuild": "npm run build:clean",
     "build:clean": "rimraf build",
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.js --color -p --progress",
